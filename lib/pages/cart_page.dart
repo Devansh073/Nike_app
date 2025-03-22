@@ -55,9 +55,7 @@ class CartPage extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            context
-                                .read<CartProvider>()
-                                .removeProduct(cartItem);
+                            context.read<CartProvider>().removeProduct(cartItem);
                             Navigator.of(context).pop(
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
